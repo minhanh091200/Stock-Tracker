@@ -1,0 +1,75 @@
+#tickers-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.stock-box {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #333;
+    margin: 10px;
+    padding: 10px;
+    transition: background-color 0.5s;
+    background: #eee;
+}
+
+.red {
+    color: #ff0000;
+}
+
+.dark-red {
+    color: #880000;
+}
+
+.gray {
+    color: #808080;
+}
+
+.green {
+    color: #008000;
+}
+
+.dark-green {
+    color: #006600;
+}
+
+.red-flash {
+    transition: background-color 1s;
+    background-color: #ffcccc !important;
+}
+
+.green-flash {
+    transition: background-color 1s;
+    background-color: #ccffcc !important;
+}
+
+.gray-flash {
+    transition: background-color 1s;
+    background-color: #ccc !important;
+}
+
+#news-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.news-article {
+    width: 45%;
+    border: 1px solid #333;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.news-article img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+@media screen and (min-width: 1200px) {
+    .news-article {
+        width: 30%;
+    }
+}
